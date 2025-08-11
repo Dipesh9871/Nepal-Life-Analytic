@@ -51,7 +51,7 @@ ui <- dashboardPage(
     title = tagList(
       tags$div(
         style = "display: flex; align-items: left;",
-        tags$img(src = "www/nepal_life_logo.png", height = 80, width = 110),
+        tags$img(src = "nepal_life_arba.png", width = "200px"),
         tags$span("Nepal Life Insurance Analytics Dashboard")
       )
     )
@@ -965,11 +965,10 @@ server <- function(input, output, session) {
   observe({
     shinyalert(
       title = "📢 Milestone 📢",
-      text = "<img src='images/nepal_life_arba.png' width='100%'/>",
+      text = "<img src='nepal_life_arba.png' width='100%'/>",
       html = TRUE,
       size = "m",
       closeOnClickOutside = TRUE
-      
     )
   })
 }
